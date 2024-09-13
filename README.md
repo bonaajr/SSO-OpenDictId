@@ -1,4 +1,4 @@
-#SSO-OpenDictId
+# SSO-OpenDictId
 Este projeto é uma implementação de Single Sign-On (SSO) utilizando OpenIddict com suporte para autenticação externa, neste caso com login via Microsoft, além de autenticação baseada em JWT para proteger os endpoints da API. O projeto foi desenvolvido em ASP.NET Core, e também possui suporte para execução em Docker.
 
 **Funcionalidades**
@@ -34,7 +34,7 @@ Este projeto é uma implementação de Single Sign-On (SSO) utilizando OpenIddic
 - ApplicationDbContext: Contexto do Entity Framework Core que gerencia a persistência de dados relacionados aos usuários e autenticações.
 - Dockerfile: Arquivo de configuração do Docker para containerização da aplicação.
 
-#Configuração
+# Configuração
 **Clone o repositório:**
 - git clone https://github.com/bonaajr/SSO-OpenDictId.git
 - Atualize o arquivo appsettings.json com as configurações adequadas:
