@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>Seja bem vindo, @ViewData["UserName"]!</h2>
+
+<div>
+    <p><strong>Tipo de Login:</strong> @ViewData["LoginProvider"]</p>
+    <p><strong>Data do Login:</strong> @ViewData["LoginTime"]</p>
+
+    @if (!string.IsNullOrEmpty((string)ViewData["TokenInfo"]))
+    {
+        <p><strong>Informações do Token JWT:</strong> @ViewData["TokenInfo"]</p>
+    }
+    else
+    {
+        <p>JWT não encontrado.</p>
+    }
+   <form asp-controller="Home" asp-action="Logout" method="post">
+        <button type="submit" style="background:none;border:none;color:blue;text-decoration:underline;cursor:pointer;">
+            Logout
+        </button>
+    </form>
+</div>

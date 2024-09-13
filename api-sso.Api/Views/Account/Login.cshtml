@@ -1,0 +1,17 @@
+﻿@model api_sso.Api.ViewModels.LoginViewModel
+
+<h2>Login</h2>
+
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <label asp-for="Credencial"></label>
+        <input asp-for="Credencial" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" type="password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<a asp-controller="Account" asp-action="LoginWithMicrosoft">Logar com conta Microsoft</a>
